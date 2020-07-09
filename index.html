@@ -3,33 +3,34 @@
 <html lang="en">
 
 <head>
-
 <title>Build a Technical Documentation Page</title>
 <meta charset="UTF-8">
-<meta name="description" content="This is what Google will show.">
+<meta name="description" content="Semi-technical documentation for using Excel in the classroom">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="images/v.ico">
 <link rel="stylesheet" href="style.css">
-
+<script src="https://use.fontawesome.com/5db464c560.js"></script>
 </head>
 
 <body>
+
 <main id="main-doc">
 
+<div class="nav-wrapper">
 <nav id="navbar">
     <header>Excel for Teachers</header>
     <ul>
-        <li><a class="nav-link" href="#Introduction_to_Excel">Introduction</a></li>
+        <li><a class="nav-link" href="#Introduction_to_Excel">Introduction to Excel</a></li>
         <li><a class="nav-link" href="#Creating_and_Saving_Spreadsheets">Creating and Saving Spreadsheets</a></li>
-        <li><a class="nav-link" href="#autofill">AutoFill</a></li>
-        <li><a class="nav-link" href="#sort">Sort</a></li>
-        <li><a class="nav-link" href="#conditionalformatting">Conditional Formatting</a></li>
-        <li><a class="nav-link" href="#comments">Comments</a></li>
-        <li><a class="nav-link" href="#functions">Functions</a></li>
+        <li><a class="nav-link" href="#Autofill">AutoFill</a></li>
+        <li><a class="nav-link" href="#Sort">Sort</a></li>
+        <li><a class="nav-link" href="#Conditional_Formatting">Conditional Formatting</a></li>
+        <li><a class="nav-link" href="#Comments">Comments</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
         <!--            <li></li>-->
     </ul>
 </nav>
-<hr>
+</div>
 
 <section class="main-section" id="Introduction_to_Excel">
 <header>Introduction to Excel</header>
@@ -48,24 +49,29 @@
 <section class="main-section" id="Creating_and_Saving_Spreadsheets">
 <header>Creating and Saving Spreadsheets</header>
 <p>When you open Excel, you have the option of either opening a 'Blank Workbook,' viewing tutorials, or accessing 'More templates.' It is possible available templates, such as budget or calendar templates, will meet your needs so peruse them as you wish. When you select More templates, a search bar will appear. Below that bar are suggested searches which are commonly used templates.</p>
-<p>To save your spreadsheet, select the save icon at teh top of the document. You should give your spreadsheet a unique name that indicates the contents: 1st Period Seating Chart is better than Book1. You can save the spreadsheet as different file types. Most often you will leave it as the default (.xlsx or .xls) or save as a pdf. Make sure you save your spreadsheet in a location in which you will easily find it.</p>
+<p>To save your spreadsheet, select the save icon at the top of the document. You should give your spreadsheet a unique name that indicates the contents: 1st Period Seating Chart is better than Book1. You can save the spreadsheet as different file types. Most often you will leave it as the default (.xlsx or .xls) or save as a pdf. Make sure you save your spreadsheet in a location in which you will easily find it.</p>
 </section>
 <hr>
 
-<section class="main-section" id="autofill">
+<section class="main-section" id="Autofill">
 <header>Autofill</header>
 <p>Most online gradebooks give you options to export class lists to an Excel document. The lists are not always numbered though and teachers certainly  want to keep an eye on their class count. You can easily insert a column at the start of your document by following the steps below.</p>
-<code>Hover over A- you may see a down arrow. Right click and select Insert.</code>
+<div class="code">
+<code><p>Hover over A- you may see a down arrow. Right click and select Insert.</p></code>
+</div>
 <p>Once you have your blank column, you can start filling in numbers. Numbering each line of your 30+ roster is tedious though so you have an <strong>autofill</strong> option. You can start typing the first three numbers then:</p>
+<div class="code">
 <code><p>Option 1: Select all three cells then drag the bottom corner (you'll see a dark green square on the corner) as far down as you need to complete your series.It is very important to select all three cells in this example. If you do not, it may fill all 1s or not work at all. </p>
 <p> Option 2: Select all three cells, got to "Fill" in the "Editing" section of the home screen. Select "Series..." If you are filling down the column, as I describe, make sure your series selector is on Columns. This is a linear series. Step value means what you want to count by: here we are going up by 1 each time. For the Stop value, put in whatever your final count number is. If you have a class of 32, write 32.  </p></code>
+    </div>
 <p>Autofill is also good for days of the week, months, or any other patterns you often use.</p>
 </section>   
 <hr>
 
-<section class="main-section" id="sort">
+<section class="main-section" id="Sort">
 <header>Sort</header>
 <p>Let's say you are looking at a spreadsheet full of test result data- maybe from a state test. You will have difficulty interpreting the data without customizing it to your needs. I typically sort my test data from least to greatest. You can do this with or without column headings, but it makes sense to write in a simple descriptive heading, such as "Test 1." Select the heading cell, go to the Editing section on the home screen and select Sort & Filter. From there, you can choose how you want to sort. The Sort & Filter section has two other important features.</p>
+<div class="code">
 <code>
     <p>
     Custom Sort: There are three columns here. The first row you see is how you're already sorted or a common sort if you have not yet done one. You can then Add Level and sort within your first sort by another characteristic. For example, I might want to first sort my students by class period and then by test score. Or I may want to sort by test score and then by Special Education indicator.    
@@ -74,33 +80,71 @@
      Filter: When you select Filter, a drop down arrow appears on the column. When you click it, you will see all the unique items in that column. This could be class periods, or subjects, or teachers. When an administrator gives us school-wide data, I immediately filter to only see data attached to my name.   
     </p>
 </code>
+    </div>
 </section>
 <hr>
 
-<section class="main-section" id="conditionalformatting">
+<section class="main-section" id="Conditional_Formatting">
 <header>Conditional Formatting</header>
-<p>Ladidadidah</p>
+<p>Make your data more readable by using conditional formatting. When I look at test scores, I like to color code students who mastered the concept in green, students on the edge in yellow, and students who failed in red. </p>
+<div class="code">
+<code>
+    <p>
+        Highlight your selected cells. Select Conditional Formatting in the Styles section of the home screen --> Highlight Cells Rules --> Greater Than/Less Than/Between. From the popup screen, input your parameters (for example, less than 65). You can choose your own custom shading and font color by choosing the drop down arrow next to Light Red Fill with Dark Red Text. The last selection is Custom Format.
+    </p>
+</code>
+   </div>
+    <p>I have also used conditional formatting with Text that Contains option under Highlight Cells Rules, and then just put a space in the input bar (rather than a number). This helped me find students who had not completed an assignment and shade that in order to focus on them.</p>
+    
 </section>
 <hr>
 
-<section class="main-section" id="comments">
+<section class="main-section" id="Comments">
 <header>Comments</header>
-<p>Ladidadidah</p>
-<p>Ladidadidah</p>
-<p>Ladidadidah</p>
-<p>Ladidadidah</p>
+<p>Let's say you are tracking a project using a spreadsheet. You have several check-in dates listed and a grade for each date. You may want to put a comment that 'Johnny turned in one day late -10.' The comments are time and date-stamped and you can edit them if needed. There are two ways to insert a comment.</p>
+<div class="code">
+<code>
+    <p>
+        Option 1: Right click the cell and select New comment (not the same as New note! A note is not time and date stamped, but still useful if you prefer).
+    </p>
+    <p>
+        Option 2: Select the Insert tab at the top of the screen and go over to the right near the end of the screen to select Comment.
+    </p>
+</code>
+    </div>
+<p>I have also used comments to indicate contacting parents for a certain assignment.</p>
 </section>
 <hr>
 
-<section class="main-section" id="functions">
-<header>Functions</header>>
-<p>Ladidadidah</p>
+<section class="main-section" id="Functions">
+<header>Functions</header>
+<p>Your online gradebook will show you class averages, maybe median. However, sometimes you want to see averages of state test data that may not be in your online gradebook. Or you may want to see the average of only a select group of students. Excel has a ton of built-in functions to help you make sense of data, but average is one particularly useful for teachers.</p>
+<div class="code">
+<code>If your data is in a column, you can go to the end of the column and type =AVERAGE(selectedCellStart:selectedCellEnd). For example =AVERAGE(A10:A40).</code>
+    </div>
+<p>Other useful functions:</p>
+<ul>
+    <li>COUNT: counts the number of cells that have a value. Useful to see how many students are on a list.</li>
+    <li>COUNTA: counts the number of cells that are not empty. Useful to see how many students actually submitted an assignment.</li>
+    <li>PROPER: converts text to proper case. Useful if you exported a class list but it is all in capital letters.</li>
+    <li>TODAY: returns today's date. Useful if you want a document updated each time you open it.</li>
+</ul>
 </section>      
 <hr>
 
 
 </main>
-
+<footer>
+   <div class="footer">
+    <ul>
+        <li><a href="https://github.com/VJones2112" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/veronicajones2112/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/veronica.10299" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.pinterest.com/vaj997788/boards/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/vaj997788" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+    </div>
+</footer>
 
 
 
