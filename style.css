@@ -1,130 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lato:wght@400;700&family=Schoolbell&display=swap');
 
 * {
-    margin:0;
-    padding:0;
+margin:0;
+padding:0;
 }
 
 html {
-    font-size: 16px;
+font-size: 16px;
 font-family: 'Lato', sans-serif;
 /*font-family: 'Schoolbell', cursive;*/
 /*    color: #002626;*/
-    color: #0E4749;
+color: #0E4749;
 }
 
 body {
-    background-color: #0E4749;
-    min-height: 100vh;
-    overflow: scroll;
+background-color: #0E4749;
+/*min-height: 100vh;*/
+overflow: scroll;
 }
 
 main {
-    max-width: 600px;
-    background-color: #EFE7DA;
-    margin: 0 auto;
-/*    box-shadow: 5px 5px 25px #E55812;*/
+max-width: 600px;
+background-color: #EFE7DA;
+margin: 0 auto;
 }
 
 header {
-    color: #E55812;
-    font-size: 2rem;
-    font-family: 'Crafty Girls', cursive;
-    font-weight: 600;
+color: #E55812;
+font-size: 2rem;
+font-family: 'Crafty Girls', cursive;
+font-weight: 600;
 }
 
 .nav-wrapper {
-    height: 300px;
+height: 300px;
 }
 
 nav {
-    text-align: center;
-    border: 1px solid #E55812;
-    box-shadow: 5px 5px 25px #E55812;
-    position: fixed;
-    width: 600px;
-    background: #EFE7DA;
-    padding: 10px 0;
+text-align: center;
+box-shadow: 5px 5px 25px #E55812;
+position: fixed;
+width: 600px;
+padding: 10px 0;
+background-color: #EFE7DA;  
+/*overflow: scroll;*/
 }
 
 nav header {
-    font-size: 2.5rem;
-    font-weight: 600;
-    
+font-size: 2.5rem;
 }
 
 nav li {
-    list-style-type: none;
-    padding: 5px;
-
+/*list-style-type: none;*/
+padding: 5px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #0E4749;
+text-decoration: none;
+color: #0E4749;
 }
 
 nav a:hover {
-    background-color: #F8C4AA;
-  background: linear-gradient(25deg, #F8C4AA 75%, #aaa 50%, #ccc 56%, white 80%);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+background-color: #F8C4AA;
+/*background: linear-gradient(25deg, #F8C4AA 75%, #aaa 50%, #ccc 56%, white 80%);*/
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .main-section {
-    margin: 1.25rem;
+margin: 1.25rem;
 }
 
 p {
-    line-height: 1.5rem;
-    margin: 1.25rem;
+line-height: 1.6rem;
+margin: 1.25rem;
 }
 
 #Introduction_to_Excel li {
-    margin-left: 3rem;
-    list-style-type: square;
+margin-left: 3rem;
+list-style-type: square;
 }
 
 .code {
-    background-color: #95C623;
-    width: 31rem;
-    margin: 0 auto;
-    
+background-color: #95C623;
+width: 31rem;
+margin: 0 auto;
+line-height: 1.6rem;
+padding: 5px;
 }
 
 #Functions li {
-    margin: 0 3rem;
-    list-style-type: square;
-    line-height: 1.5rem;
+margin: 0 3rem;
+list-style-type: square;
+line-height: 1.6rem;
 }
 
 #Functions {
-    margin-bottom: 2rem;
+padding-bottom: 2rem;
 }
 
 footer {
-    max-width: 600px;
-    background-color: #EFE7DA;
-    margin: 0 auto;
-    padding: 10px 0;
-/*    display: flex;*/
+max-width: 600px;
+/*background-color: #EFE7DA;*/
+margin: 0 auto;
 }
 
 .footer {
-    text-align: center;
-    margin: 10px 0;
+text-align: center;
 }
 
 footer li {
-    list-style-type: none;
-    display: inline;
-    padding: 2rem;
+display: inline;
+padding: 2rem;
 }
 
 footer a {
-    color: #0E4749;
-    background-color: hsl(20, 85%, 82%);
-    padding: 5px;
-    border-radius: 50%;
-    height: 1rem;
-    width: 1rem;
+color: #0E4749;
+background-color: hsl(20, 85%, 82%);
+padding: 5px;
+border-radius: 50%;
+/*height: 1rem;*/
+/*width: 1rem;*/
+}
+
+
+@media screen and (min-width: 700px) {
+
+body {
+/*width: 1000px;*/
+/*margin: 0 auto;*/
+}
+
+main {
+max-width: 900px;
+}
+
+#main-doc {
+display: grid;
+grid-template-columns: 1fr repeat(2, 2fr);
+/*grid-column-gap: 0px;*/
+/*grid-row-gap: 0px;*/
+/*width: 100%;*/
+}
+
+nav {
+width: 18rem;
+/*height: 94%;*/
+margin-left: 10px;
+}
+
+nav li {
+font-size: 1.3rem;
+line-height: 2rem;
+padding: 1.9rem;
+}
+
+.main-section {
+position: relative;
+left: 12rem;
+font-size: 1.1rem;
+}
+
+header {
+font-size: 2.2rem;
+}
+
+footer {
+min-width: 900px;
+margin-top: 1rem;
+}
+
+footer li {
+/*position: relative;*/
+/*left: 7.5rem; */
+padding: 3rem;
+}
 }
