@@ -42,7 +42,6 @@ nav {
     width: 600px;
     padding: 10px 0;
     background-color: #EFE7DA;
-    /*overflow: scroll;*/
 }
 
 nav header {
@@ -139,6 +138,7 @@ footer i {
         margin-left: 10px;
         overflow: scroll;
         height: 90%;
+        position:fixed;
     }
 
     nav li {
