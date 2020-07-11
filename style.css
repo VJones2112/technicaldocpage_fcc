@@ -125,11 +125,6 @@ footer i {
 
 @media screen and (min-width: 700px) {
 
-    body {
-        /*width: 1000px;*/
-        /*margin: 0 auto;*/
-    }
-
     main {
         max-width: 900px;
     }
@@ -137,15 +132,12 @@ footer i {
     #main-doc {
         display: grid;
         grid-template-columns: 1fr repeat(2, 2fr);
-        /*grid-column-gap: 0px;*/
-        /*grid-row-gap: 0px;*/
-        /*width: 100%;*/
     }
 
     nav {
         width: 18rem;
-        /*height: 94%;*/
         margin-left: 10px;
+        overflow: scroll;
     }
 
     nav li {
@@ -170,8 +162,6 @@ footer i {
     }
 
     footer li {
-        /*position: relative;*/
-        /*left: 7.5rem; */
         padding: 3rem;
     }
 }
