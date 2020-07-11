@@ -138,6 +138,7 @@ footer i {
         width: 18rem;
         margin-left: 10px;
         overflow: scroll;
+        height: auto;
     }
 
     nav li {
