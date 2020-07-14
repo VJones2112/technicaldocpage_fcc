@@ -39,9 +39,10 @@ nav {
     text-align: center;
     box-shadow: 5px 5px 25px #E55812;
     position: fixed;
-    width: 600px;
+    width: 100%;
     padding: 10px 0;
     background-color: #EFE7DA;
+    margin: 0 auto;
 }
 
 nav header {
